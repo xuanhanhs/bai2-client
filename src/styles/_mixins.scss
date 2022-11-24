@@ -1,0 +1,11 @@
+@mixin user-select($value: none) {
+  -webkit-user-select: $value;
+  -moz-user-select: $value;
+  -ms-user-select: $value;
+  user-select: $value;
+}
+
+@mixin filter($filter-type, $filter-amount) {
+  -webkit-filter: $filter-type + unquote('(#{$filter-amount})');
+  filter: $filter-type + unquote('(#{$filter-amount})');
+}
